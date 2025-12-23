@@ -1,0 +1,75 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,700&family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --primary-red: #800000;
+    --dark-red: #5a0000;
+    --gold: #d4af37;
+    --cream: #f9f4e8;
+    --text-color: #3e2723;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cream);
+    color: var(--text-color);
+}
+
+h1, h2, h3, .nav-links a {
+    font-family: 'Cinzel', serif;
+}
+
+/* Header Styling - Based on your Header Design */
+header {
+    background: linear-gradient(rgba(128,0,0,0.9), rgba(90,0,0,0.9)), url('../images/red-texture.jpg');
+    border-bottom: 3px double var(--gold);
+    padding: 15px 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+/* Buttons - Matching the 'Order Now' style */
+.btn-gold {
+    background: linear-gradient(to bottom, #e2b04a, #a67c27);
+    color: white;
+    border: 1px solid #7d5a15;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Footer - Based on your Footer Design */
+footer {
+    background: linear-gradient(rgba(90,0,0,0.95), rgba(90,0,0,0.95)), url('../images/red-texture.jpg');
+    color: white;
+    text-align: center;
+    padding: 50px 0 20px;
+    border-top: 2px solid var(--gold);
+}
